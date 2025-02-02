@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 470px;
+    background: white;
+    color: #555;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 35px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.addTask {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background: #dfdfdf;
+}
+
+.addTask input {
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  font-size: 18px;
+  flex: 1;
+  margin-right: 16px;
+  color: #555;
+  background: #dfdfdf;
+  border-radius: 30px;
+}
+
+.addTask button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  height: 60px;
+  cursor: pointer;
+  background-color: rgb(255, 136, 0);
+  color: #fff;
+  font-weight: 800;
+}
+
+.addTask button:hover {
+  background-color: rgb(255, 94, 0);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 18px;
+    color: #7a7a7a;
+}
+
+li button:hover {
+    background: #dfdfdf;
+}
+
+/* Custom Checkbox Styles */
+li input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #dfdfdf;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+  }
+  
+  /* Inner circle (orange) when checked */
+  li input[type="checkbox"]:checked {
+    background-color: rgb(255, 136, 0);
+    border-color: rgb(255, 136, 0);
+  }
+  
+  /* Checkmark (white) when checked */
+  li input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #888; /* Optional: Change text color to indicate completion */
+  }
