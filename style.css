@@ -77,9 +77,9 @@ li {
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
 li button {
@@ -96,7 +96,6 @@ li button:hover {
     background: #dfdfdf;
 }
 
-/* Custom Checkbox Styles */
 li input[type="checkbox"] {
     appearance: none;
     width: 24px;
@@ -108,13 +107,11 @@ li input[type="checkbox"] {
     outline: none;
   }
   
-  /* Inner circle (orange) when checked */
   li input[type="checkbox"]:checked {
     background-color: rgb(255, 136, 0);
     border-color: rgb(255, 136, 0);
   }
   
-  /* Checkmark (white) when checked */
   li input[type="checkbox"]:checked::after {
     content: "";
     position: absolute;
@@ -129,5 +126,5 @@ li input[type="checkbox"] {
 
   .completed {
     text-decoration: line-through;
-    color: #888; /* Optional: Change text color to indicate completion */
+    color: #888;
   }
